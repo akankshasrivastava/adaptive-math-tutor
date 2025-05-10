@@ -15,127 +15,79 @@ def select_next_question(user_id, all_questions_df):
     Heuristic-based policy for choosing the next question.
     Updates user's difficulty preference based on recent performance.
     """
-    # ---- DEBUG PRINTS (Uncomment to trace policy execution during tests) ----
-    # print(f"\n[Policy] User: {user_id}")
-    # ---- END DEBUG PRINTS ----
-
-    profile = biographical_memory.get_profile(user_id)
-    # History is sorted: most recent first
-    history = episodic_memory.get_user_history(user_id, last_n=RECENT_WINDOW * 2)  # Get a bit more history just in case
-
-    # ---- DEBUG PRINTS ----
-    # print(f"[Policy] Current profile difficulty: {profile['current_difficulty_level']}")
-    # print(f"[Policy] Recent history (up to {RECENT_WINDOW} for streak):")
-    # for i, ev in enumerate(history[:RECENT_WINDOW]):
-    #     print(f"[Policy]  - Hist {i}: QID={ev['question_id']}, Label={ev['classified_label']}, TS={ev['timestamp']}")
-    # ---- END DEBUG PRINTS ----
+    profile = biographical_memory.get_profile(user_id)  # This now fetches from DB
+    history = episodic_memory.get_user_history(user_id, last_n=RECENT_WINDOW * 2)  # Fetches from DB
 
     attempted_qids_in_recent_history = {e['question_id'] for e in history}
 
     streak = 0
-    for ev in history[:RECENT_WINDOW]:
+    for ev in history[:RECENT_WINDOW]:  # Check only the most recent relevant window
         if ev['classified_label'] == 'correct':
             streak += 1
         else:
             break
 
-    # ---- DEBUG PRINTS ----
-    # print(f"[Policy] Calculated streak: {streak}")
-    # ---- END DEBUG PRINTS ----
-
-    current_difficulty_in_profile = profile['current_difficulty_level']
+    current_difficulty_in_profile = profile.get('current_difficulty_level', 'easy')  # Use .get for safety
     new_difficulty_for_this_turn = current_difficulty_in_profile
 
     if streak >= STREAK_TO_ADVANCE_DIFFICULTY:
         if current_difficulty_in_profile != 'hard':
-            current_diff_idx = DIFFICULTY_ORDER.index(current_difficulty_in_profile)
-            new_difficulty_for_this_turn = DIFFICULTY_ORDER[current_diff_idx + 1]
-            biographical_memory.set_overall_difficulty_preference(user_id, new_difficulty_for_this_turn)
-            # ---- DEBUG PRINTS ----
-            # print(f"[Policy] Streak condition met! Promoting difficulty from {current_difficulty_in_profile} to {new_difficulty_for_this_turn}")
-            # ---- END DEBUG PRINTS ----
-        # else:
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Streak condition met, but already at 'hard'. Staying at 'hard'.")
-        # ---- END DEBUG PRINTS ----
-    # else:
-    # ---- DEBUG PRINTS ----
-    # print(f"[Policy] Streak condition NOT met (streak {streak} < {STREAK_TO_ADVANCE_DIFFICULTY}). Difficulty remains {current_difficulty_in_profile}.")
-    # ---- END DEBUG PRINTS ----
+            try:
+                current_diff_idx = DIFFICULTY_ORDER.index(current_difficulty_in_profile)
+                new_difficulty_for_this_turn = DIFFICULTY_ORDER[current_diff_idx + 1]
+                biographical_memory.set_overall_difficulty_preference(user_id,
+                                                                      new_difficulty_for_this_turn)  # Updates DB
+            except ValueError:
+                # print(f"[Policy Warning] User {user_id} has invalid difficulty '{current_difficulty_in_profile}'. Resetting to 'easy'.")
+                new_difficulty_for_this_turn = 'easy'
+                biographical_memory.set_overall_difficulty_preference(user_id, new_difficulty_for_this_turn)
 
-    mastery = profile['topic_mastery']
-    struggling_topics = [t for t, m_data in mastery.items() if m_data['total'] > 2 and m_data['score'] < 50]
+    mastery = profile.get('topic_mastery', {})  # Use .get for safety, mastery is a dict of dicts
+
+    # CORRECTED KEYS: 'total_attempts' and 'mastery_score'
+    # Also use .get() for safety when accessing keys within m_data
+    struggling_topics = [
+        t for t, m_data in mastery.items()
+        if isinstance(m_data, dict) and m_data.get('total_attempts', 0) > 2 and m_data.get('mastery_score', 0.0) < 50
+    ]
 
     chosen_topic_filter = None
     if struggling_topics:
+        # Optional: sort struggling_topics by score to pick the lowest
+        # struggling_topics.sort(key=lambda t: mastery.get(t, {}).get('mastery_score', 101))
         chosen_topic_filter = struggling_topics[0]
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Focusing on struggling topic: {chosen_topic_filter}")
-        # ---- END DEBUG PRINTS ----
 
     pool = all_questions_df.copy()
 
     if chosen_topic_filter:
         topic_pool = pool[pool['topic'] == chosen_topic_filter]
-        if not topic_pool.empty:  # CHANGED
+        if not topic_pool.empty:
             pool = topic_pool
-        # else:
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Warning: Struggling topic {chosen_topic_filter} has no questions in the main pool.")
-        # ---- END DEBUG PRINTS ----
 
     difficulty_pool = pool[pool['difficulty'] == new_difficulty_for_this_turn]
-    if not difficulty_pool.empty:  # CHANGED
+    if not difficulty_pool.empty:
         pool = difficulty_pool
-    # else:
-    # ---- DEBUG PRINTS ----
-    # print(f"[Policy] No questions found for difficulty '{new_difficulty_for_this_turn}' (topic: {chosen_topic_filter}). Broadening difficulty search.")
-    # ---- END DEBUG PRINTS ----
 
     # Fallbacks
-    if pool.empty and chosen_topic_filter:  # CHANGED
+    if pool.empty and chosen_topic_filter:
         pool = all_questions_df[all_questions_df['topic'] == chosen_topic_filter]
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Fallback 1: No Qs at diff/topic. Relaxed difficulty, keeping topic {chosen_topic_filter}. Pool size: {len(pool)}")
-        # ---- END DEBUG PRINTS ----
 
-    if pool.empty:  # CHANGED
+    if pool.empty:
         pool = all_questions_df[all_questions_df['difficulty'] == new_difficulty_for_this_turn]
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Fallback 2: No Qs at diff/topic or just topic. Relaxed topic, keeping difficulty {new_difficulty_for_this_turn}. Pool size: {len(pool)}")
-        # ---- END DEBUG PRINTS ----
 
-    if not pool.empty:  # CHANGED
+    if not pool.empty:
         pool_after_attempt_filter = pool[~pool['question_id'].isin(attempted_qids_in_recent_history)]
-        if not pool_after_attempt_filter.empty:  # CHANGED
+        if not pool_after_attempt_filter.empty:
             pool = pool_after_attempt_filter
-        # else:
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Warning: All questions in the current filtered pool were recently attempted. Allowing repeats from this pool (size {len(pool)}).")
-        # ---- END DEBUG PRINTS ----
 
-    if pool.empty:  # CHANGED
+    if pool.empty:
         pool = all_questions_df[~all_questions_df['question_id'].isin(attempted_qids_in_recent_history)]
-        # ---- DEBUG PRINTS ----
-        # print(f"[Policy] Fallback 3: Pool was empty after filters. Using all questions not recently attempted. Pool size: {len(pool)}")
-        # ---- END DEBUG PRINTS ----
-        if pool.empty:  # CHANGED
+        if pool.empty:
             pool = all_questions_df
-            # ---- DEBUG PRINTS ----
-            # print(f"[Policy] Fallback 4: All questions recently attempted. Picking from entire dataset. Pool size: {len(pool)}")
-            # ---- END DEBUG PRINTS ----
 
-    if pool.empty:  # CHANGED
+    if pool.empty:
         if all_questions_df.empty:
             raise ValueError("Policy Error: all_questions_df is empty, cannot select a question.")
-        # print("[Policy] CRITICAL FALLBACK: No questions available in any pool after all fallbacks, returning a random sample from all_questions_df.")
-        chosen = all_questions_df.sample(1).iloc[0]
-    else:
-        chosen = pool.sample(1).iloc[0]
+        return all_questions_df.sample(1).iloc[0].to_dict()
 
-    # ---- DEBUG PRINTS ----
-    # print(f"[Policy] Final chosen question ID: {chosen['question_id']}, Topic: {chosen['topic']}, Difficulty: {chosen['difficulty']}")
-    # print(f"[Policy] User {user_id} profile difficulty after this selection: {biographical_memory.get_profile(user_id)['current_difficulty_level']}")
-    # ---- END DEBUG PRINTS ----
-
-    return chosen.to_dict()
+    return pool.sample(1).iloc[0].to_dict()
