@@ -1,0 +1,251 @@
+question_id,topic,question_text,correct_answer,label,solution_explanation,difficulty,render_as
+Q_PARTIAL_001,Algebra,Solve for x: x^2 - 5x + 6 = 0,x = 2 or x = 3,correct,Factor as (x-2)(x-3)=0. Solutions are x=2 and x=3.,medium,latex
+Q_INCORRECT_001,Algebra,Solve for x: 2x + 5 = 1,x = -2,correct,2x = 1 - 5 => 2x = -4 => x = -2. A common mistake is x=2 (sign error).,easy,latex
+Q_ERROR_001,Geometry,What is the area of a square with side 5 cm? Include units in your answer.,25 cm^2,correct,Area = side^2 = $5^2 = 25$. Units are cm$^2$.,medium,latex
+Q_FRACTION_001,Algebra,Solve for x: 3x + 4 = 9,x = 5/3,correct,Subtract 4 from both sides: 3x = 9 - 4 => 3x = 5. Divide by 3: x = 5/3.,medium,latex
+Q005,Algebra,Solve for x: x^2 - 3x - 28 = 0,x = -4 or x = 7,correct,"The equation is x^2 - (3)x + (-28) = 0. Factor it as (x - -4)(x - 7) = 0. So, the solutions are x = -4 or x = 7.",hard,latex
+Q006,Algebra,Solve for x: x^2 - 7x + 12 = 0,x = 3 or x = 4,correct,"The equation is x^2 - (7)x + (12) = 0. Factor it as (x - 3)(x - 4) = 0. So, the solutions are x = 3 or x = 4.",medium,latex
+Q007,Arithmetic,What is 15% of 240?,36,correct,15% of 240 is (15/100) * 240 = 36.,medium,markdown
+Q008,Algebra,Solve for x: 9x + -23 = -45,x = -22/9,correct,"Given: 9x + -23 = -45. Subtract -23 from both sides: 9x = -22. So, x = -22/9. Simplified, x = -22/9.",hard,latex
+Q009,Arithmetic,What is 90% of 260?,234,correct,90% of 260 is (90/100) * 260 = 234.,hard,markdown
+Q010,Arithmetic,Calculate: (11 * 7) + (24 / 3),85,correct,"First, calculate inside parentheses: (11 * 7) = 77, and (24 / 3) = 8. Then add the results: 77 + 8 = 85.",hard,latex
+Q011,Algebra,Solve for x: 3x + -13 = -31,x = -6,correct,Given: 3x + -13 = -31. Subtract -13 from both sides: 3x = -18. Then divide by 3: x = -6.,medium,latex
+Q012,Geometry,What is the circumference of a circle with radius 9 inches? (Use $\pi$ or 'pi' in your answer),18pi inches,correct,"The circumference of a circle is $C = 2 \pi r$. So, Circumference = $2 \times \pi \times 9 = 18\pi$ inches.",medium,latex
+Q013,Geometry,What is the area of a square with side length 17 feet?,289 feet^2,correct,"The area of a square is given by the formula $A = s^2$. So, Area = $17^2 = 289$ feet$^2$.",medium,latex
+Q014,Algebra,Solve for x: x^2 + 1x - 30 = 0,x = -6 or x = 5,correct,"The equation is x^2 - (-1)x + (-30) = 0. Factor it as (x - -6)(x - 5) = 0. So, the solutions are x = -6 or x = 5.",hard,latex
+Q015,Geometry,What is the circumference of a circle with radius 3 units? (Use $\pi$ or 'pi' in your answer),6pi units,correct,"The circumference of a circle is $C = 2 \pi r$. So, Circumference = $2 \times \pi \times 3 = 6\pi$ units.",easy,latex
+Q016,Arithmetic,Calculate: (11 * 3) + (30 / 5),39,correct,"First, calculate inside parentheses: (11 * 3) = 33, and (30 / 5) = 6. Then add the results: 33 + 6 = 39.",hard,latex
+Q017,Word Problems,Tom baked 20 pencils. They gave 8 pencils to sister and then baked 4 more. How many pencils does Tom have now?,16,correct,"First, subtract the given away: 20 - 8 = 12. Then add the newly baked: 12 + 4 = 16 pencils.",medium,markdown
+Q018,Arithmetic,What is 86 + 4?,90,correct,86 + 4 = 90.,medium,markdown
+Q019,Geometry,A rectangle has a length of 22 m and a width of 13 m. What is its area?,286 m^2,correct,"The area of a rectangle is $A = l \times w$. So, Area = $22 \times 13 = 286$ m$^2$.",hard,latex
+Q020,Word Problems,Emily baked 27 books. They gave 12 books to friend and then baked 7 more. How many books does Emily have now?,22,correct,"First, subtract the given away: 27 - 12 = 15. Then add the newly baked: 15 + 7 = 22 books.",hard,markdown
+Q021,Geometry,A rectangle has a length of 18 mm and a width of 2 mm. What is its area?,36 mm^2,correct,"The area of a rectangle is $A = l \times w$. So, Area = $18 \times 2 = 36$ mm$^2$.",medium,latex
+Q022,Geometry,A rectangle has a length of 15 inches and a width of 3 inches. What is its perimeter?,36 inches,correct,"The perimeter of a rectangle is $P = 2(l + w)$. So, Perimeter = $2 \times (15 + 3) = 36$ inches.",easy,latex
+Q023,Word Problems,"Emily bought 5 notebooks at $7 each, and 2 folders at $9 each. How much did Emily spend in total?",$53,correct,Cost of notebooks: 5 * $7 = $35. Cost of folders: 2 * $9 = $18. Total spent = $35 + $18 = $53.,hard,markdown
+Q024,Algebra,Solve for x: x^2 - 12x + 35 = 0,x = 5 or x = 7,correct,"The equation is x^2 - (12)x + (35) = 0. Factor it as (x - 7)(x - 5) = 0. So, the solutions are x = 7 or x = 5.",hard,latex
+Q025,Geometry,What is the circumference of a circle with radius 6 feet? (Use $\pi$ or 'pi' in your answer),12pi feet,correct,"The circumference of a circle is $C = 2 \pi r$. So, Circumference = $2 \times \pi \times 6 = 12\pi$ feet.",easy,latex
+Q026,Arithmetic,What is 14 / 17? Express as a simplified fraction.,14/17,correct,14 / 17 simplifies to the fraction 14/17.,hard,latex
+Q027,Algebra,Solve for x: 5x + -11 = 42,x = 53/5,correct,"Given: 5x + -11 = 42. Subtract -11 from both sides: 5x = 53. So, x = 53/5. Simplified, x = 53/5.",hard,latex
+Q028,Algebra,Solve for x: 9x + -12 = -39,x = -3,correct,Given: 9x + -12 = -39. Subtract -12 from both sides: 9x = -27. Then divide by 9: x = -3.,medium,latex
+Q029,Geometry,What is the area of a circle with radius 12 cm? (Use $\pi$ or 'pi' in your answer),144pi cm^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 12^2 = 144\pi$ cm$^2$.",medium,latex
+Q030,Arithmetic,What is 65 - 40?,25,correct,65 - 40 = 25.,easy,latex
+Q031,Arithmetic,Calculate: (8 * 4) + (36 / 3),44,correct,"First, calculate inside parentheses: (8 * 4) = 32, and (36 / 3) = 12. Then add the results: 32 + 12 = 44.",hard,latex
+Q032,Word Problems,"Lisa bought 6 notebooks at $8 each, and 4 folders at $11 each. How much did Lisa spend in total?",$92,correct,Cost of notebooks: 6 * $8 = $48. Cost of folders: 4 * $11 = $44. Total spent = $48 + $44 = $92.,hard,markdown
+Q033,Word Problems,Sarah baked 20 apples. They gave 5 apples to sister and then baked 3 more. How many apples does Sarah have now?,18,correct,"First, subtract the given away: 20 - 5 = 15. Then add the newly baked: 15 + 3 = 18 apples.",medium,markdown
+Q034,Geometry,What is the area of a circle with radius 11 cm? (Use $\pi$ or 'pi' in your answer),121pi cm^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 11^2 = 121\pi$ cm$^2$.",medium,latex
+Q035,Geometry,Calculate the volume of a cube with edge length 9 cm.,729 cm^3,correct,"The volume of a cube is $V = s^3$. So, Volume = $9^3 = 729$ cm$^3$.",medium,latex
+Q036,Geometry,What is the area of a square with side length 18 inches?,324 inches^2,correct,"The area of a square is given by the formula $A = s^2$. So, Area = $18^2 = 324$ inches$^2$.",medium,latex
+Q037,Word Problems,Sarah has 44 cookies to share equally among 4 people. How many cookies does each person get?,11,correct,"To share equally, divide the total items by the number of people: 44 / 4 = 11 cookies each.",medium,markdown
+Q038,Algebra,Solve for x: 13x + -3 = 5,x = 8/13,correct,"Given: 13x + -3 = 5. Subtract -3 from both sides: 13x = 8. So, x = 8/13. Simplified, x = 8/13.",hard,latex
+Q039,Arithmetic,What is 162 / 9?,18,correct,162 / 9 = 18.,medium,markdown
+Q040,Word Problems,Mike baked 11 marbles. They gave 8 marbles to teacher and then baked 5 more. How many marbles does Mike have now?,8,correct,"First, subtract the given away: 11 - 8 = 3. Then add the newly baked: 3 + 5 = 8 marbles.",medium,markdown
+Q041,Arithmetic,What is 37 + 93?,130,correct,37 + 93 = 130.,medium,markdown
+Q042,Arithmetic,Calculate: (6 * 4) + (40 / 5),32,correct,"First, calculate inside parentheses: (6 * 4) = 24, and (40 / 5) = 8. Then add the results: 24 + 8 = 32.",hard,latex
+Q043,Algebra,Solve for x: 13x + 15 = -11,x = -2,correct,Given: 13x + 15 = -11. Subtract 15 from both sides: 13x = -26. Then divide by 13: x = -2.,hard,latex
+Q044,Algebra,Solve for x: 5x + -21 = 19,x = 8,correct,Given: 5x + -21 = 19. Subtract -21 from both sides: 5x = 40. Then divide by 5: x = 8.,hard,latex
+Q045,Arithmetic,What is 84 / 12?,7,correct,84 / 12 = 7.,easy,markdown
+Q046,Algebra,Solve for x: 1x + 21 = 46,x = 25,correct,Given: 1x + 21 = 46. Subtract 21 from both sides: 1x = 25. Then divide by 1: x = 25.,hard,latex
+Q047,Algebra,Solve for x: 3x + -25 = 14,x = 13,correct,Given: 3x + -25 = 14. Subtract -25 from both sides: 3x = 39. Then divide by 3: x = 13.,hard,latex
+Q048,Algebra,Solve for x: 8x + 17 = 49,x = 4,correct,Given: 8x + 17 = 49. Subtract 17 from both sides: 8x = 32. Then divide by 8: x = 4.,hard,latex
+Q049,Geometry,What is the area of a circle with radius 4 mm? (Use $\pi$ or 'pi' in your answer),16pi mm^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 4^2 = 16\pi$ mm$^2$.",easy,latex
+Q050,Algebra,Solve for x: x^2 + 7x + 10 = 0,x = -5 or x = -2,correct,"The equation is x^2 - (-7)x + (10) = 0. Factor it as (x - -5)(x - -2) = 0. So, the solutions are x = -5 or x = -2.",medium,latex
+Q051,Geometry,Calculate the area of a triangle with a base of 30 inches and a height of 25 inches.,375 inches^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 30 \times 25 = 375 inches^2$.",hard,latex
+Q052,Arithmetic,Calculate: 68 + 88 + 3,159,correct,"Following order of operations for Calculate: 68 + 88 + 3, the result is 159.",easy,markdown
+Q053,Algebra,Solve for x: x^2 - 9x + 8 = 0,x = 1 or x = 8,correct,"The equation is x^2 - (9)x + (8) = 0. Factor it as (x - 1)(x - 8) = 0. So, the solutions are x = 1 or x = 8.",hard,latex
+Q054,Word Problems,Tom has 24 books. They give 18 books to their sister. How many books does Tom have left?,6,correct,Tom starts with 24 books and gives away 18. Remaining = 24 - 18 = 6 books.,easy,markdown
+Q055,Algebra,Solve for x: 1x + 4 = -6,x = -10,correct,Given: 1x + 4 = -6. Subtract 4 from both sides: 1x = -10. Then divide by 1: x = -10.,medium,latex
+Q056,Algebra,Solve for x: 3x + -18 = -15,x = 1,correct,Given: 3x + -18 = -15. Subtract -18 from both sides: 3x = 3. Then divide by 3: x = 1.,medium,latex
+Q057,Geometry,What is the area of a circle with radius 10 feet? (Use $\pi$ or 'pi' in your answer),100pi feet^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 10^2 = 100\pi$ feet$^2$.",medium,latex
+Q058,Geometry,What is the circumference of a circle with radius 11 units? (Use $\pi$ or 'pi' in your answer),22pi units,correct,"The circumference of a circle is $C = 2 \pi r$. So, Circumference = $2 \times \pi \times 11 = 22\pi$ units.",medium,latex
+Q059,Algebra,Solve for x: 3x + 24 = 0,x = -8,correct,Given: 3x + 24 = 0. Subtract 24 from both sides: 3x = -24. Then divide by 3: x = -8.,hard,latex
+Q060,Algebra,Solve for x: x^2 - 10x + 24 = 0,x = 4 or x = 6,correct,"The equation is x^2 - (10)x + (24) = 0. Factor it as (x - 6)(x - 4) = 0. So, the solutions are x = 6 or x = 4.",medium,latex
+Q061,Algebra,Solve for x: 2x + 17 = -17,x = -17,correct,Given: 2x + 17 = -17. Subtract 17 from both sides: 2x = -34. Then divide by 2: x = -17.,hard,latex
+Q062,Geometry,What is the area of a square with side length 15 cm?,225 cm^2,correct,"The area of a square is given by the formula $A = s^2$. So, Area = $15^2 = 225$ cm$^2$.",medium,latex
+Q063,Algebra,Solve for x: 2x + 20 = 19,x = -1/2,correct,"Given: 2x + 20 = 19. Subtract 20 from both sides: 2x = -1. So, x = -1/2. Simplified, x = -1/2.",easy,latex
+Q064,Algebra,Solve for x: 3x + 16 = -7,x = -23/3,correct,"Given: 3x + 16 = -7. Subtract 16 from both sides: 3x = -23. So, x = -23/3. Simplified, x = -23/3.",hard,latex
+Q065,Geometry,What is the area of a square with side length 12 cm?,144 cm^2,correct,"The area of a square is given by the formula $A = s^2$. So, Area = $12^2 = 144$ cm$^2$.",easy,markdown
+Q066,Word Problems,Sarah baked 14 apples. They gave 7 apples to brother and then baked 9 more. How many apples does Sarah have now?,16,correct,"First, subtract the given away: 14 - 7 = 7. Then add the newly baked: 7 + 9 = 16 apples.",medium,markdown
+Q067,Algebra,Solve for x: x^2 - 6x - 7 = 0,x = -1 or x = 7,correct,"The equation is x^2 - (6)x + (-7) = 0. Factor it as (x - 7)(x - -1) = 0. So, the solutions are x = 7 or x = -1.",hard,latex
+Q068,Algebra,Solve for x: x^2 + 14x + 48 = 0,x = -8 or x = -6,correct,"The equation is x^2 - (-14)x + (48) = 0. Factor it as (x - -8)(x - -6) = 0. So, the solutions are x = -8 or x = -6.",hard,latex
+Q069,Algebra,Solve for x: 9x + -9 = 40,x = 49/9,correct,"Given: 9x + -9 = 40. Subtract -9 from both sides: 9x = 49. So, x = 49/9. Simplified, x = 49/9.",hard,latex
+Q070,Algebra,Solve for x: 4x + 11 = 26,x = 15/4,correct,"Given: 4x + 11 = 26. Subtract 11 from both sides: 4x = 15. So, x = 15/4. Simplified, x = 15/4.",medium,latex
+Q071,Word Problems,There are 8 boxes. Each box contains 9 cookies. How many cookies are there in total?,72,correct,"To find the total, multiply the number of boxes by the items per box: 8 * 9 = 72 cookies.",medium,markdown
+Q072,Algebra,Solve for x: 1x + 21 = -12,x = -33,correct,Given: 1x + 21 = -12. Subtract 21 from both sides: 1x = -33. Then divide by 1: x = -33.,hard,latex
+Q073,Algebra,Solve for x: 14x + -14 = 33,x = 47/14,correct,"Given: 14x + -14 = 33. Subtract -14 from both sides: 14x = 47. So, x = 47/14. Simplified, x = 47/14.",hard,latex
+Q074,Algebra,Solve for x: x^2 + 2x - 35 = 0,x = -7 or x = 5,correct,"The equation is x^2 - (-2)x + (-35) = 0. Factor it as (x - 5)(x - -7) = 0. So, the solutions are x = 5 or x = -7.",hard,latex
+Q075,Algebra,Solve for x: 1x + -22 = 41,x = 63,correct,Given: 1x + -22 = 41. Subtract -22 from both sides: 1x = 63. Then divide by 1: x = 63.,hard,latex
+Q076,Algebra,Solve for x: 8x + -9 = 32,x = 41/8,correct,"Given: 8x + -9 = 32. Subtract -9 from both sides: 8x = 41. So, x = 41/8. Simplified, x = 41/8.",hard,latex
+Q077,Geometry,Calculate the area of a triangle with a base of 13 inches and a height of 24 inches.,156 inches^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 13 \times 24 = 156 inches^2$.",hard,latex
+Q078,Algebra,Solve for x: 5x + 21 = 31,x = 2,correct,Given: 5x + 21 = 31. Subtract 21 from both sides: 5x = 10. Then divide by 5: x = 2.,hard,latex
+Q079,Arithmetic,What is 66 / 3?,22,correct,66 / 3 = 22.,medium,markdown
+Q080,Word Problems,Emily has 88 marbles to share equally among 4 people. How many marbles does each person get?,22,correct,"To share equally, divide the total items by the number of people: 88 / 4 = 22 marbles each.",medium,markdown
+Q081,Algebra,Solve for x: 8x + 5 = -38,x = -43/8,correct,"Given: 8x + 5 = -38. Subtract 5 from both sides: 8x = -43. So, x = -43/8. Simplified, x = -43/8.",hard,latex
+Q082,Algebra,Solve for x: x^2 - 11x + 28 = 0,x = 4 or x = 7,correct,"The equation is x^2 - (11)x + (28) = 0. Factor it as (x - 7)(x - 4) = 0. So, the solutions are x = 7 or x = 4.",hard,latex
+Q083,Word Problems,"Tom bought 7 pens at $5 each, and 4 folders at $7 each. How much did Tom spend in total?",$63,correct,Cost of pens: 7 * $5 = $35. Cost of folders: 4 * $7 = $28. Total spent = $35 + $28 = $63.,hard,markdown
+Q084,Algebra,Solve for x: 8x + 24 = -10,x = -17/4,correct,"Given: 8x + 24 = -10. Subtract 24 from both sides: 8x = -34. So, x = -34/8. Simplified, x = -17/4.",hard,latex
+Q085,Algebra,Solve for x: 7x + 3 = -46,x = -7,correct,Given: 7x + 3 = -46. Subtract 3 from both sides: 7x = -49. Then divide by 7: x = -7.,hard,latex
+Q086,Word Problems,Sarah has 40 apples to share equally among 10 people. How many apples does each person get?,4,correct,"To share equally, divide the total items by the number of people: 40 / 10 = 4 apples each.",medium,markdown
+Q087,Geometry,What is the area of a circle with radius 10 cm? (Use $\pi$ or 'pi' in your answer),100pi cm^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 10^2 = 100\pi$ cm$^2$.",medium,latex
+Q088,Algebra,Solve for x: x^2 - 1x - 20 = 0,x = -4 or x = 5,correct,"The equation is x^2 - (1)x + (-20) = 0. Factor it as (x - 5)(x - -4) = 0. So, the solutions are x = 5 or x = -4.",medium,latex
+Q089,Algebra,Solve for x: x^2 + 11x + 28 = 0,x = -7 or x = -4,correct,"The equation is x^2 - (-11)x + (28) = 0. Factor it as (x - -7)(x - -4) = 0. So, the solutions are x = -7 or x = -4.",hard,latex
+Q090,Geometry,What is the area of a circle with radius 13 m? (Use $\pi$ or 'pi' in your answer),169pi m^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 13^2 = 169\pi$ m$^2$.",hard,latex
+Q091,Geometry,What is the area of a square with side length 22 cm?,484 cm^2,correct,"The area of a square is given by the formula $A = s^2$. So, Area = $22^2 = 484$ cm$^2$.",hard,latex
+Q092,Arithmetic,What is 23 * 5?,115,correct,23 * 5 = 115.,medium,markdown
+Q093,Algebra,Solve for x: x^2 - 49 = 0,x = -7 or x = 7,correct,"The equation is x^2 - (0)x + (-49) = 0. Factor it as (x - -7)(x - 7) = 0. So, the solutions are x = -7 or x = 7.",hard,latex
+Q094,Arithmetic,Calculate: (13 * 6) + (44 / 4),89,correct,"First, calculate inside parentheses: (13 * 6) = 78, and (44 / 4) = 11. Then add the results: 78 + 11 = 89.",hard,latex
+Q095,Algebra,Solve for x: x^2 - 12x + 32 = 0,x = 4 or x = 8,correct,"The equation is x^2 - (12)x + (32) = 0. Factor it as (x - 8)(x - 4) = 0. So, the solutions are x = 8 or x = 4.",hard,latex
+Q096,Algebra,Solve for x: 12x + -17 = -41,x = -2,correct,Given: 12x + -17 = -41. Subtract -17 from both sides: 12x = -24. Then divide by 12: x = -2.,hard,latex
+Q097,Algebra,Solve for x: 2x + -8 = -6,x = 1,correct,Given: 2x + -8 = -6. Subtract -8 from both sides: 2x = 2. Then divide by 2: x = 1.,easy,latex
+Q098,Geometry,What is the circumference of a circle with radius 10 feet? (Use $\pi$ or 'pi' in your answer),20pi feet,correct,"The circumference of a circle is $C = 2 \pi r$. So, Circumference = $2 \times \pi \times 10 = 20\pi$ feet.",medium,latex
+Q099,Algebra,Solve for x: 1x + -24 = 24,x = 48,correct,Given: 1x + -24 = 24. Subtract -24 from both sides: 1x = 48. Then divide by 1: x = 48.,hard,latex
+Q100,Algebra,Solve for x: x^2 + 2x - 15 = 0,x = -5 or x = 3,correct,"The equation is x^2 - (-2)x + (-15) = 0. Factor it as (x - -5)(x - 3) = 0. So, the solutions are x = -5 or x = 3.",medium,latex
+Q101,Algebra,Solve for x: x^2 - 1x - 12 = 0,x = -3 or x = 4,correct,"The equation is x^2 - (1)x + (-12) = 0. Factor it as (x - 4)(x - -3) = 0. So, the solutions are x = 4 or x = -3.",medium,latex
+Q102,Arithmetic,Calculate: 44 + 34 + 4,82,correct,"Following order of operations for Calculate: 44 + 34 + 4, the result is 82.",easy,markdown
+Q103,Arithmetic,Calculate: (13 * 8) + (27 / 3),113,correct,"First, calculate inside parentheses: (13 * 8) = 104, and (27 / 3) = 9. Then add the results: 104 + 9 = 113.",hard,latex
+Q104,Algebra,Solve for x: 13x + 8 = -39,x = -47/13,correct,"Given: 13x + 8 = -39. Subtract 8 from both sides: 13x = -47. So, x = -47/13. Simplified, x = -47/13.",easy,markdown
+Q105,Algebra,Solve for x: x^2 - 6x + 5 = 0,x = 1 or x = 5,correct,"The equation is x^2 - (6)x + (5) = 0. Factor it as (x - 5)(x - 1) = 0. So, the solutions are x = 5 or x = 1.",medium,latex
+Q106,Word Problems,Sarah has 28 bananas. They give 20 bananas to their teacher. How many bananas does Sarah have left?,8,correct,Sarah starts with 28 bananas and gives away 20. Remaining = 28 - 20 = 8 bananas.,easy,markdown
+Q107,Algebra,Solve for x: x^2 - 12x + 32 = 0,x = 4 or x = 8,correct,"The equation is x^2 - (12)x + (32) = 0. Factor it as (x - 4)(x - 8) = 0. So, the solutions are x = 4 or x = 8.",hard,latex
+Q108,Geometry,Calculate the volume of a cube with edge length 4 feet.,64 feet^3,correct,"The volume of a cube is $V = s^3$. So, Volume = $4^3 = 64$ feet$^3$.",easy,latex
+Q109,Geometry,Calculate the area of a triangle with a base of 7 cm and a height of 22 cm.,77 cm^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 7 \times 22 = 77 cm^2$.",hard,latex
+Q110,Algebra,Solve for x: x^2 + 8x + 12 = 0,x = -6 or x = -2,correct,"The equation is x^2 - (-8)x + (12) = 0. Factor it as (x - -6)(x - -2) = 0. So, the solutions are x = -6 or x = -2.",medium,latex
+Q111,Geometry,A rectangle has a length of 15 units and a width of 8 units. What is its area?,120 units^2,correct,"The area of a rectangle is $A = l \times w$. So, Area = $15 \times 8 = 120$ units$^2$.",medium,latex
+Q112,Algebra,Solve for x: x^2 - 13x + 42 = 0,x = 6 or x = 7,correct,"The equation is x^2 - (13)x + (42) = 0. Factor it as (x - 7)(x - 6) = 0. So, the solutions are x = 7 or x = 6.",hard,latex
+Q113,Word Problems,Mike baked 18 pencils. They gave 13 pencils to teacher and then baked 9 more. How many pencils does Mike have now?,14,correct,"First, subtract the given away: 18 - 13 = 5. Then add the newly baked: 5 + 9 = 14 pencils.",medium,markdown
+Q114,Geometry,A rectangle has a length of 24 units and a width of 4 units. What is its perimeter?,56 units,correct,"The perimeter of a rectangle is $P = 2(l + w)$. So, Perimeter = $2 \times (24 + 4) = 56$ units.",hard,latex
+Q115,Algebra,Solve for x: x^2 - 2x - 24 = 0,x = -4 or x = 6,correct,"The equation is x^2 - (2)x + (-24) = 0. Factor it as (x - 6)(x - -4) = 0. So, the solutions are x = 6 or x = -4.",medium,latex
+Q116,Algebra,Solve for x: x^2 - 49 = 0,x = -7 or x = 7,correct,"The equation is x^2 - (0)x + (-49) = 0. Factor it as (x - -7)(x - 7) = 0. So, the solutions are x = -7 or x = 7.",hard,latex
+Q117,Word Problems,"Emily bought 6 pens at $6 each, and 3 folders at $7 each. How much did Emily spend in total?",$57,correct,Cost of pens: 6 * $6 = $36. Cost of folders: 3 * $7 = $21. Total spent = $36 + $21 = $57.,hard,markdown
+Q118,Algebra,Solve for x: x^2 - 1 = 0,x = -1 or x = 1,correct,"The equation is x^2 - (0)x + (-1) = 0. Factor it as (x - 1)(x - -1) = 0. So, the solutions are x = 1 or x = -1.",easy,latex
+Q119,Algebra,Solve for x: x^2 - 15x + 56 = 0,x = 7 or x = 8,correct,"The equation is x^2 - (15)x + (56) = 0. Factor it as (x - 7)(x - 8) = 0. So, the solutions are x = 7 or x = 8.",hard,latex
+Q120,Arithmetic,What is 16 / 18? Express as a simplified fraction.,8/9,correct,16 / 18 simplifies to the fraction 8/9.,medium,latex
+Q121,Word Problems,Emily has 96 pencils to share equally among 6 people. How many pencils does each person get?,16,correct,"To share equally, divide the total items by the number of people: 96 / 6 = 16 pencils each.",medium,markdown
+Q122,Geometry,A rectangle has a length of 4 m and a width of 2 m. What is its perimeter?,12 m,correct,"The perimeter of a rectangle is $P = 2(l + w)$. So, Perimeter = $2 \times (4 + 2) = 12$ m.",easy,latex
+Q123,Arithmetic,What is 22 * 5?,110,correct,22 * 5 = 110.,medium,markdown
+Q124,Geometry,A rectangle has a length of 21 m and a width of 10 m. What is its area?,210 m^2,correct,"The area of a rectangle is $A = l \times w$. So, Area = $21 \times 10 = 210$ m$^2$.",hard,latex
+Q125,Word Problems,"Sarah bought 5 notebooks at $5 each, and 2 folders at $8 each. How much did Sarah spend in total?",$41,correct,Cost of notebooks: 5 * $5 = $25. Cost of folders: 2 * $8 = $16. Total spent = $25 + $16 = $41.,hard,markdown
+Q126,Word Problems,"Sarah bought 3 pens at $2 each, and 3 erasers at $4 each. How much did Sarah spend in total?",$21,correct,Cost of pens: 3 * $2 = $6. Cost of erasers: 3 * $5 = $15. Total spent = $6 + $15 = $21.,easy,markdown
+Q127,Geometry,Calculate the volume of a cube with edge length 2 m.,8 m^3,correct,"The volume of a cube is $V = s^3$. So, Volume = $2^3 = 8$ m$^3$.",easy,latex
+Q128,Arithmetic,What is 58 + 79?,137,correct,58 + 79 = 137.,medium,markdown
+Q129,Arithmetic,What is 50% of 248?,124,correct,50% of 248 is (50/100) * 248 = 124.,medium,markdown
+Q130,Arithmetic,What is 50 / 10?,5,correct,50 / 10 = 5.,easy,markdown
+Q131,Arithmetic,Calculate: (5 * 9) + (8 / 2),49,correct,"First, calculate inside parentheses: (5 * 9) = 45, and (8 / 2) = 4. Then add the results: 45 + 4 = 49.",hard,latex
+Q132,Algebra,Solve for x: x^2 + 7x - 8 = 0,x = -8 or x = 1,correct,"The equation is x^2 - (-7)x + (-8) = 0. Factor it as (x - -8)(x - 1) = 0. So, the solutions are x = -8 or x = 1.",hard,latex
+Q133,Algebra,Solve for x: 1x + 20 = -3,x = -23,correct,Given: 1x + 20 = -3. Subtract 20 from both sides: 1x = -23. Then divide by 1: x = -23.,hard,latex
+Q134,Algebra,Solve for x: 6x + 19 = 25,x = 1,correct,Given: 6x + 19 = 25. Subtract 19 from both sides: 6x = 6. Then divide by 6: x = 1.,medium,latex
+Q135,Algebra,Solve for x: 4x + -16 = -26,x = -5/2,correct,"Given: 4x + -16 = -26. Subtract -16 from both sides: 4x = -10. So, x = -10/4. Simplified, x = -5/2.",easy,latex
+Q136,Algebra,Solve for x: x^2 + 3x - 10 = 0,x = -5 or x = 2,correct,"The equation is x^2 - (-3)x + (-10) = 0. Factor it as (x - 2)(x - -5) = 0. So, the solutions are x = 2 or x = -5.",medium,latex
+Q137,Word Problems,Mike baked 29 books. They gave 11 books to friend and then baked 8 more. How many books does Mike have now?,26,correct,"First, subtract the given away: 29 - 11 = 18. Then add the newly baked: 18 + 8 = 26 books.",hard,markdown
+Q138,Algebra,Solve for x: 4x + -14 = -23,x = -9/4,correct,"Given: 4x + -14 = -23. Subtract -14 from both sides: 4x = -9. So, x = -9/4. Simplified, x = -9/4.",medium,latex
+Q139,Algebra,Solve for x: x^2 + 9x + 8 = 0,x = -8 or x = -1,correct,"The equation is x^2 - (-9)x + (8) = 0. Factor it as (x - -8)(x - -1) = 0. So, the solutions are x = -8 or x = -1.",hard,latex
+Q140,Algebra,Solve for x: 13x + -7 = -43,x = -36/13,correct,"Given: 13x + -7 = -43. Subtract -7 from both sides: 13x = -36. So, x = -36/13. Simplified, x = -36/13.",hard,latex
+Q141,Algebra,Solve for x: 13x + -5 = 21,x = 2,correct,Given: 13x + -5 = 21. Subtract -5 from both sides: 13x = 26. Then divide by 13: x = 2.,hard,latex
+Q142,Geometry,Calculate the area of a triangle with a base of 6 feet and a height of 6 feet.,18 feet^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 6 \times 6 = 18 feet^2$.",easy,markdown
+Q143,Arithmetic,What is 20% of 102?,20.4,correct,20% of 102 is (20/100) * 102 = 20.4.,medium,markdown
+Q144,Arithmetic,What is 80% of 240?,192,correct,80% of 240 is (80/100) * 240 = 192.,medium,markdown
+Q145,Algebra,Solve for x: 10x + 21 = 4,x = -17/10,correct,"Given: 10x + 21 = 4. Subtract 21 from both sides: 10x = -17. So, x = -17/10. Simplified, x = -17/10.",hard,latex
+Q146,Word Problems,John baked 13 apples. They gave 15 apples to teacher and then baked 10 more. How many apples does John have now?,8,correct,"First, subtract the given away: 13 - 15 = -2. Then add the newly baked: -2 + 10 = 8 apples.",medium,markdown
+Q147,Word Problems,"John bought 6 pens at $7 each, and 5 erasers at $8 each. How much did John spend in total?",$82,correct,Cost of pens: 6 * $7 = $42. Cost of erasers: 5 * $8 = $40. Total spent = $42 + $40 = $82.,hard,markdown
+Q148,Geometry,A rectangle has a length of 14 m and a width of 12 m. What is its area?,168 m^2,correct,"The area of a rectangle is $A = l \times w$. So, Area = $14 \times 12 = 168$ m$^2$.",medium,latex
+Q149,Geometry,What is the area of a circle with radius 7 cm? (Use $\pi$ or 'pi' in your answer),49pi cm^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 7^2 = 49\pi$ cm$^2$.",easy,latex
+Q150,Algebra,Solve for x: x^2 + 8x + 12 = 0,x = -6 or x = -2,correct,"The equation is x^2 - (-8)x + (12) = 0. Factor it as (x - -6)(x - -2) = 0. So, the solutions are x = -6 or x = -2.",medium,latex
+Q151,Algebra,Solve for x: x^2 + 1x - 30 = 0,x = -6 or x = 5,correct,"The equation is x^2 - (-1)x + (-30) = 0. Factor it as (x - -6)(x - 5) = 0. So, the solutions are x = -6 or x = 5.",hard,latex
+Q152,Algebra,Solve for x: 3x + 15 = -39,x = -18,correct,Given: 3x + 15 = -39. Subtract 15 from both sides: 3x = -54. Then divide by 3: x = -18.,hard,latex
+Q153,Geometry,Calculate the area of a triangle with a base of 8 inches and a height of 17 inches.,68 inches^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 8 \times 17 = 68 inches^2$.",medium,latex
+Q154,Word Problems,Sarah has 48 books to share equally among 6 people. How many books does each person get?,8,correct,"To share equally, divide the total items by the number of people: 48 / 6 = 8 books each.",medium,markdown
+Q155,Algebra,Solve for x: 5x + 22 = -13,x = -7,correct,Given: 5x + 22 = -13. Subtract 22 from both sides: 5x = -35. Then divide by 5: x = -7.,hard,latex
+Q156,Word Problems,Mike baked 14 apples. They gave 5 apples to brother and then baked 10 more. How many apples does Mike have now?,19,correct,"First, subtract the given away: 14 - 5 = 9. Then add the newly baked: 9 + 10 = 19 apples.",medium,markdown
+Q157,Algebra,Solve for x: x^2 - 7x + 12 = 0,x = 3 or x = 4,correct,"The equation is x^2 - (7)x + (12) = 0. Factor it as (x - 3)(x - 4) = 0. So, the solutions are x = 3 or x = 4.",medium,latex
+Q158,Arithmetic,What is 40 - 6?,34,correct,40 - 6 = 34.,easy,markdown
+Q159,Word Problems,Lisa has 19 pencils. They get 10 more pencils. How many pencils does Lisa have in total?,29,correct,Lisa starts with 19 pencils and adds 10 more. Total = 19 + 10 = 29 pencils.,easy,markdown
+Q160,Geometry,What is the area of a circle with radius 8 inches? (Use $\pi$ or 'pi' in your answer),64pi inches^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 8^2 = 64\pi$ inches$^2$.",medium,latex
+Q161,Algebra,Solve for x: 3x + -10 = -47,x = -37/3,correct,"Given: 3x + -10 = -47. Subtract -10 from both sides: 3x = -37. So, x = -37/3. Simplified, x = -37/3.",hard,latex
+Q162,Geometry,What is the area of a circle with radius 5 units? (Use $\pi$ or 'pi' in your answer),25pi units^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 5^2 = 25\pi$ units$^2$.",easy,latex
+Q163,Geometry,Calculate the area of a triangle with a base of 6 m and a height of 21 m.,63 m^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 6 \times 21 = 63 m^2$.",hard,latex
+Q164,Arithmetic,What is 25% of 140?,35,correct,25% of 140 is (25/100) * 140 = 35.,easy,markdown
+Q165,Word Problems,"Mike bought 3 notebooks at $7 each, and 5 erasers at $10 each. How much did Mike spend in total?",$66,correct,Cost of notebooks: 3 * $7 = $21. Cost of erasers: 5 * $9 = $45. Total spent = $21 + $45 = $66.,hard,markdown
+Q166,Geometry,What is the perimeter of a square with side length 3 inches?,12 inches,correct,"The perimeter of a square is $P = 4s$. So, Perimeter = $4 \times 3 = 12$ inches.",easy,latex
+Q167,Algebra,Solve for x: 6x + -3 = 15,x = 3,correct,Given: 6x + -3 = 15. Subtract -3 from both sides: 6x = 18. Then divide by 6: x = 3.,easy,markdown
+Q168,Algebra,Solve for x: x^2 + 5x - 14 = 0,x = -7 or x = 2,correct,"The equation is x^2 - (-5)x + (-14) = 0. Factor it as (x - -7)(x - 2) = 0. So, the solutions are x = -7 or x = 2.",hard,latex
+Q169,Algebra,Solve for x: 1x + -18 = 32,x = 50,correct,Given: 1x + -18 = 32. Subtract -18 from both sides: 1x = 50. Then divide by 1: x = 50.,hard,latex
+Q170,Algebra,Solve for x: x^2 + 4x - 12 = 0,x = -6 or x = 2,correct,"The equation is x^2 - (-4)x + (-12) = 0. Factor it as (x - 2)(x - -6) = 0. So, the solutions are x = 2 or x = -6.",medium,latex
+Q171,Word Problems,Lisa has 38 apples. They give 27 apples to their sister. How many apples does Lisa have left?,11,correct,Lisa starts with 38 apples and gives away 27. Remaining = 38 - 27 = 11 apples.,easy,markdown
+Q172,Word Problems,Lisa has 34 apples. They get 23 more apples. How many apples does Lisa have in total?,57,correct,Lisa starts with 34 apples and adds 23 more. Total = 34 + 23 = 57 apples.,easy,markdown
+Q173,Arithmetic,What is 45 + 67?,112,correct,45 + 67 = 112.,easy,markdown
+Q174,Arithmetic,What is 23 / 2? Express as a simplified fraction.,23/2,correct,23 / 2 simplifies to the fraction 23/2.,hard,latex
+Q175,Algebra,Solve for x: 7x + -20 = -38,x = -18/7,correct,"Given: 7x + -20 = -38. Subtract -20 from both sides: 7x = -18. So, x = -18/7. Simplified, x = -18/7.",hard,latex
+Q176,Algebra,Solve for x: x^2 - 1x - 42 = 0,x = -6 or x = 7,correct,"The equation is x^2 - (1)x + (-42) = 0. Factor it as (x - 7)(x - -6) = 0. So, the solutions are x = 7 or x = -6.",hard,latex
+Q177,Arithmetic,What is 190 / 10?,19,correct,190 / 10 = 19.,medium,markdown
+Q178,Algebra,Solve for x: x^2 + 9x + 14 = 0,x = -7 or x = -2,correct,"The equation is x^2 - (-9)x + (14) = 0. Factor it as (x - -7)(x - -2) = 0. So, the solutions are x = -7 or x = -2.",hard,latex
+Q179,Geometry,A rectangle has a length of 10 units and a width of 2 units. What is its perimeter?,24 units,correct,"The perimeter of a rectangle is $P = 2(l + w)$. So, Perimeter = $2 \times (10 + 2) = 24$ units.",easy,markdown
+Q180,Algebra,Solve for x: x^2 - 9x + 20 = 0,x = 4 or x = 5,correct,"The equation is x^2 - (9)x + (20) = 0. Factor it as (x - 4)(x - 5) = 0. So, the solutions are x = 4 or x = 5.",medium,latex
+Q181,Arithmetic,What is 5 + 21?,26,correct,5 + 21 = 26.,easy,markdown
+Q182,Algebra,Solve for x: 6x + 24 = 42,x = 3,correct,Given: 6x + 24 = 42. Subtract 24 from both sides: 6x = 18. Then divide by 6: x = 3.,easy,latex
+Q183,Geometry,Calculate the volume of a cube with edge length 9 m.,729 m^3,correct,"The volume of a cube is $V = s^3$. So, Volume = $9^3 = 729$ m$^3$.",medium,latex
+Q184,Geometry,A rectangle has a length of 8 cm and a width of 2 cm. What is its perimeter?,20 cm,correct,"The perimeter of a rectangle is $P = 2(l + w)$. So, Perimeter = $2 \times (8 + 2) = 20$ cm.",easy,latex
+Q185,Word Problems,Mike baked 21 apples. They gave 14 apples to sister and then baked 3 more. How many apples does Mike have now?,10,correct,"First, subtract the given away: 21 - 14 = 7. Then add the newly baked: 7 + 3 = 10 apples.",medium,markdown
+Q186,Arithmetic,What is 16 * 10?,160,correct,16 * 10 = 160.,medium,markdown
+Q187,Arithmetic,What is 83 - 68?,15,correct,83 - 68 = 15.,easy,markdown
+Q188,Geometry,Calculate the volume of a cube with edge length 3 mm.,27 mm^3,correct,"The volume of a cube is $V = s^3$. So, Volume = $3^3 = 27$ mm$^3$.",easy,latex
+Q189,Geometry,What is the perimeter of a square with side length 2 feet?,8 feet,correct,"The perimeter of a square is $P = 4s$. So, Perimeter = $4 \times 2 = 8$ feet.",easy,latex
+Q190,Algebra,Solve for x: x^2 - 6x + 8 = 0,x = 2 or x = 4,correct,"The equation is x^2 - (6)x + (8) = 0. Factor it as (x - 2)(x - 4) = 0. So, the solutions are x = 2 or x = 4.",easy,latex
+Q191,Algebra,Solve for x: x^2 - 2x - 48 = 0,x = -6 or x = 8,correct,"The equation is x^2 - (2)x + (-48) = 0. Factor it as (x - -6)(x - 8) = 0. So, the solutions are x = -6 or x = 8.",hard,latex
+Q192,Algebra,Solve for x: x^2 + 7x + 10 = 0,x = -5 or x = -2,correct,"The equation is x^2 - (-7)x + (10) = 0. Factor it as (x - -5)(x - -2) = 0. So, the solutions are x = -5 or x = -2.",medium,latex
+Q193,Algebra,Solve for x: x^2 - 5x - 14 = 0,x = -2 or x = 7,correct,"The equation is x^2 - (5)x + (-14) = 0. Factor it as (x - -2)(x - 7) = 0. So, the solutions are x = -2 or x = 7.",hard,latex
+Q194,Algebra,Solve for x: 2x + 18 = 42,x = 12,correct,Given: 2x + 18 = 42. Subtract 18 from both sides: 2x = 24. Then divide by 2: x = 12.,hard,latex
+Q195,Algebra,Solve for x: x^2 - 2x - 8 = 0,x = -2 or x = 4,correct,"The equation is x^2 - (2)x + (-8) = 0. Factor it as (x - 4)(x - -2) = 0. So, the solutions are x = 4 or x = -2.",easy,latex
+Q196,Word Problems,There are 9 boxes. Each box contains 18 bananas. How many bananas are there in total?,162,correct,"To find the total, multiply the number of boxes by the items per box: 9 * 18 = 162 bananas.",medium,markdown
+Q197,Geometry,What is the area of a circle with radius 15 mm? (Use $\pi$ or 'pi' in your answer),225pi mm^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 15^2 = 225\pi$ mm$^2$.",easy,latex
+Q198,Arithmetic,Calculate: (9 * 6) + (20 / 2),64,correct,"First, calculate inside parentheses: (9 * 6) = 54, and (20 / 2) = 10. Then add the results: 54 + 10 = 64.",hard,latex
+Q199,Algebra,Solve for x: x^2 - 10x + 21 = 0,x = 3 or x = 7,correct,"The equation is x^2 - (10)x + (21) = 0. Factor it as (x - 7)(x - 3) = 0. So, the solutions are x = 7 or x = 3.",hard,latex
+Q200,Algebra,Solve for x: 6x + -25 = -7,x = 3,correct,Given: 6x + -25 = -7. Subtract -25 from both sides: 6x = 18. Then divide by 6: x = 3.,easy,markdown
+Q201,Algebra,Solve for x: 1x + 13 = 10,x = -3,correct,Given: 1x + 13 = 10. Subtract 13 from both sides: 1x = -3. Then divide by 1: x = -3.,medium,latex
+Q202,Word Problems,Mike has 16 cookies. They give 10 cookies to their teacher. How many cookies does Mike have left?,6,correct,Mike starts with 16 cookies and gives away 10. Remaining = 16 - 10 = 6 cookies.,easy,markdown
+Q203,Algebra,Solve for x: x^2 - 3x - 10 = 0,x = -2 or x = 5,correct,"The equation is x^2 - (3)x + (-10) = 0. Factor it as (x - -2)(x - 5) = 0. So, the solutions are x = -2 or x = 5.",medium,latex
+Q204,Algebra,Solve for x: 1x + 1 = 47,x = 46,correct,Given: 1x + 1 = 47. Subtract 1 from both sides: 1x = 46. Then divide by 1: x = 46.,hard,latex
+Q205,Word Problems,"Lisa bought 5 pens at $7 each, and 2 folders at $9 each. How much did Lisa spend in total?",$51,correct,Cost of pens: 5 * $7 = $35. Cost of folders: 2 * $8 = $16. Total spent = $35 + $16 = $51.,hard,markdown
+Q206,Algebra,Solve for x: x^2 + 11x + 30 = 0,x = -6 or x = -5,correct,"The equation is x^2 - (-11)x + (30) = 0. Factor it as (x - -6)(x - -5) = 0. So, the solutions are x = -6 or x = -5.",easy,latex
+Q207,Algebra,Solve for x: 9x + -4 = -13,x = -1,correct,Given: 9x + -4 = -13. Subtract -4 from both sides: 9x = -9. Then divide by 9: x = -1.,medium,latex
+Q208,Word Problems,Tom has 40 pencils. They get 15 more pencils. How many pencils does Tom have in total?,55,correct,Tom starts with 40 pencils and adds 15 more. Total = 40 + 15 = 55 pencils.,easy,markdown
+Q209,Word Problems,Sarah has 45 apples. They give 36 apples to their friend. How many apples does Sarah have left?,9,correct,Sarah starts with 45 apples and gives away 36. Remaining = 45 - 36 = 9 apples.,easy,markdown
+Q210,Word Problems,Sarah baked 23 pencils. They gave 10 pencils to sister and then baked 9 more. How many pencils does Sarah have now?,22,correct,"First, subtract the given away: 23 - 10 = 13. Then add the newly baked: 13 + 9 = 22 pencils.",medium,markdown
+Q211,Algebra,Solve for x: x^2 + 12x + 35 = 0,x = -7 or x = -5,correct,"The equation is x^2 - (-12)x + (35) = 0. Factor it as (x - -5)(x - -7) = 0. So, the solutions are x = -5 or x = -7.",hard,latex
+Q212,Algebra,Solve for x: x^2 - 11x + 24 = 0,x = 3 or x = 8,correct,"The equation is x^2 - (11)x + (24) = 0. Factor it as (x - 8)(x - 3) = 0. So, the solutions are x = 8 or x = 3.",hard,latex
+Q213,Algebra,Solve for x: 8x + 13 = -12,x = -25/8,correct,"Given: 8x + 13 = -12. Subtract 13 from both sides: 8x = -25. So, x = -25/8. Simplified, x = -25/8.",hard,latex
+Q214,Algebra,Solve for x: x^2 - 1x - 42 = 0,x = -6 or x = 7,correct,"The equation is x^2 - (1)x + (-42) = 0. Factor it as (x - 7)(x - -6) = 0. So, the solutions are x = 7 or x = -6.",hard,latex
+Q215,Algebra,Solve for x: x^2 + 8x + 7 = 0,x = -7 or x = -1,correct,"The equation is x^2 - (-8)x + (7) = 0. Factor it as (x - -1)(x - -7) = 0. So, the solutions are x = -1 or x = -7.",hard,latex
+Q216,Algebra,Solve for x: x^2 - 4x + 3 = 0,x = 1 or x = 3,correct,"The equation is x^2 - (4)x + (3) = 0. Factor it as (x - 1)(x - 3) = 0. So, the solutions are x = 1 or x = 3.",easy,latex
+Q217,Arithmetic,What is 60% of 50?,30,correct,60% of 50 is (60/100) * 50 = 30.,medium,markdown
+Q218,Word Problems,Mike baked 25 marbles. They gave 13 marbles to brother and then baked 7 more. How many marbles does Mike have now?,19,correct,"First, subtract the given away: 25 - 13 = 12. Then add the newly baked: 12 + 7 = 19 marbles.",medium,markdown
+Q219,Arithmetic,Calculate: 45 + 5 + 7,57,correct,"Following order of operations for Calculate: 45 + 5 + 7, the result is 57.",easy,markdown
+Q220,Algebra,Solve for x: 2x + 14 = 12,x = -1,correct,Given: 2x + 14 = 12. Subtract 14 from both sides: 2x = -2. Then divide by 2: x = -1.,medium,latex
+Q221,Algebra,Solve for x: 1x + -1 = 13,x = 14,correct,Given: 1x + -1 = 13. Subtract -1 from both sides: 1x = 14. Then divide by 1: x = 14.,medium,latex
+Q222,Arithmetic,What is 71 + 75?,146,correct,71 + 75 = 146.,medium,markdown
+Q223,Algebra,Solve for x: 3x + 8 = -7,x = -5,correct,Given: 3x + 8 = -7. Subtract 8 from both sides: 3x = -15. Then divide by 3: x = -5.,easy,latex
+Q224,Arithmetic,What is 17 + 37?,54,correct,17 + 37 = 54.,easy,latex
+Q225,Algebra,Solve for x: 5x + 19 = 9,x = -2,correct,Given: 5x + 19 = 9. Subtract 19 from both sides: 5x = -10. Then divide by 5: x = -2.,medium,latex
+Q226,Geometry,A rectangle has a length of 17 units and a width of 6 units. What is its perimeter?,46 units,correct,"The perimeter of a rectangle is $P = 2(l + w)$. So, Perimeter = $2 \times (17 + 6) = 46$ units.",medium,latex
+Q227,Arithmetic,What is 17 - 16?,1,correct,17 - 16 = 1.,easy,markdown
+Q228,Word Problems,Emily has 33 cookies. They get 29 more cookies. How many cookies does Emily have in total?,62,correct,Emily starts with 33 cookies and adds 29 more. Total = 33 + 29 = 62 cookies.,easy,markdown
+Q229,Algebra,Solve for x: 1x + -21 = 35,x = 56,correct,Given: 1x + -21 = 35. Subtract -21 from both sides: 1x = 56. Then divide by 1: x = 56.,hard,latex
+Q230,Arithmetic,What is 75% of 204?,153,correct,75% of 204 is (75/100) * 204 = 153.,medium,markdown
+Q231,Word Problems,John baked 12 pencils. They gave 14 pencils to teacher and then baked 10 more. How many pencils does John have now?,8,correct,"First, subtract the given away: 12 - 14 = -2. Then add the newly baked: -2 + 10 = 8 pencils.",medium,markdown
+Q232,Algebra,Solve for x: 1x + 23 = -11,x = -34,correct,Given: 1x + 23 = -11. Subtract 23 from both sides: 1x = -34. Then divide by 1: x = -34.,hard,latex
+Q233,Algebra,Solve for x: x^2 - 5x - 14 = 0,x = -2 or x = 7,correct,"The equation is x^2 - (5)x + (-14) = 0. Factor it as (x - -2)(x - 7) = 0. So, the solutions are x = -2 or x = 7.",hard,latex
+Q234,Geometry,Calculate the area of a triangle with a base of 13 cm and a height of 18 cm.,117 cm^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 13 \times 18 = 117 cm^2$.",medium,latex
+Q235,Algebra,Solve for x: 3x + -16 = 17,x = 11,correct,Given: 3x + -16 = 17. Subtract -16 from both sides: 3x = 33. Then divide by 3: x = 11.,medium,latex
+Q236,Algebra,Solve for x: x^2 + 1x - 20 = 0,x = -5 or x = 4,correct,"The equation is x^2 - (-1)x + (-20) = 0. Factor it as (x - -5)(x - 4) = 0. So, the solutions are x = -5 or x = 4.",medium,latex
+Q237,Arithmetic,What is 30 * 12?,360,correct,30 * 12 = 360.,hard,markdown
+Q238,Geometry,Calculate the area of a triangle with a base of 22 feet and a height of 7 feet.,77 feet^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 22 \times 7 = 77 feet^2$.",medium,latex
+Q239,Geometry,Calculate the volume of a cube with edge length 7 m.,343 m^3,correct,"The volume of a cube is $V = s^3$. So, Volume = $7^3 = 343$ m$^3$.",medium,latex
+Q240,Arithmetic,What is 242 / 11?,22,correct,242 / 11 = 22.,medium,markdown
+Q241,Geometry,Calculate the area of a triangle with a base of 14 mm and a height of 21 mm.,147 mm^2,correct,"The area of a triangle is $A = \frac{1}{2} \times base \times height$. So, Area = $\frac{1}{2} \times 14 \times 21 = 147 mm^2$.",hard,latex
+Q242,Algebra,Solve for x: 8x + -15 = 21,x = 9/2,correct,"Given: 8x + -15 = 21. Subtract -15 from both sides: 8x = 36. So, x = 36/8. Simplified, x = 9/2.",medium,latex
+Q243,Geometry,What is the area of a circle with radius 4 m? (Use $\pi$ or 'pi' in your answer),16pi m^2,correct,"The area of a circle is $A = \pi r^2$. So, Area = $\pi \times 4^2 = 16\pi$ m$^2$.",easy,latex
+Q244,Algebra,Solve for x: x^2 - 49 = 0,x = -7 or x = 7,correct,"The equation is x^2 - (0)x + (-49) = 0. Factor it as (x - 7)(x - -7) = 0. So, the solutions are x = 7 or x = -7.",hard,latex
+Q245,Algebra,Solve for x: x^2 + 5x - 6 = 0,x = -6 or x = 1,correct,"The equation is x^2 - (-5)x + (-6) = 0. Factor it as (x - 1)(x - -6) = 0. So, the solutions are x = 1 or x = -6.",medium,latex
+Q246,Algebra,Solve for x: 3x + 7 = -21,x = -28/3,correct,"Given: 3x + 7 = -21. Subtract 7 from both sides: 3x = -28. So, x = -28/3. Simplified, x = -28/3.",hard,latex
+Q247,Algebra,Solve for x: 5x + 25 = 44,x = 19/5,correct,"Given: 5x + 25 = 44. Subtract 25 from both sides: 5x = 19. So, x = 19/5. Simplified, x = 19/5.",hard,latex
+Q248,Word Problems,Sarah baked 14 books. They gave 10 books to brother and then baked 3 more. How many books does Sarah have now?,7,correct,"First, subtract the given away: 14 - 10 = 4. Then add the newly baked: 4 + 3 = 7 books.",medium,markdown
+Q249,Word Problems,There are 7 boxes. Each box contains 7 marbles. How many marbles are there in total?,49,correct,"To find the total, multiply the number of boxes by the items per box: 7 * 7 = 49 marbles.",medium,markdown
+Q250,Algebra,Solve for x: x^2 - 4x - 5 = 0,x = -1 or x = 5,correct,"The equation is x^2 - (4)x + (-5) = 0. Factor it as (x - 5)(x - -1) = 0. So, the solutions are x = 5 or x = -1.",medium,latex

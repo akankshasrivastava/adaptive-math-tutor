@@ -1,0 +1,11 @@
+# adaptive-math-tutor/requirements.txt
+pandas
+scikit-learn
+fastapi
+uvicorn[standard] # Includes pydantic, jinja2, etc.
+streamlit
+requests
+joblib
+openai
+python-dotenv # For API keys if used (e.g. OpenAI)
+# numpy is a dependency of pandas/sklearn, usually installed with them
